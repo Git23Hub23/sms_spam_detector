@@ -2,7 +2,7 @@
 
 A machine learning web app that classifies SMS messages as **spam** or **ham** (not spam).
 
-**Live demo:** (https://smsspamdetector-y7smfctxduqv8wn7vbgcwh.streamlit.app/)
+**Live demo:** https://smsspamdetector-y7smfctxduqv8wn7vbgcwh.streamlit.app/
 
 ## Problem
 Spam messages waste time and can be scams. This project trains a model to detect them from the message text alone.
