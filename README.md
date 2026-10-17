@@ -3,7 +3,7 @@
 A machine learning project that classifies SMS messages as **spam** or **ham** (not spam).
 
 ## Status
-In progress (Day 4 of 10: TF-IDF features done)
+In progress (Day 5 of 10: first model trained)
 
 ## Dataset
 SMS Spam Collection Dataset (UCI / Kaggle), about 5,500 labeled messages.
@@ -28,6 +28,14 @@ After cleaning, 5,128 messages remain.
 ## Feature extraction
 Text is converted to numbers using **TF-IDF** (top 3,000 words). The data is split 80% train / 20% test, and the vectorizer is fitted on training data only to avoid data leakage.
 
+## Model
+First model: **Multinomial Naive Bayes** trained on TF-IDF features.
+- Accuracy: about 97% on the test set (write your exact number here).
+- A model that always guesses "ham" scores about 87%, so accuracy alone is not enough. Precision, recall and F1 come next.
+
+## Limitations
+The dataset is old, so the model works well on classic SMS spam (prizes, "call now") but can miss modern promotional messages, such as app marketing.
+
 ## Tech stack
 Python, pandas, scikit-learn, NLTK, Streamlit
 
@@ -35,9 +43,10 @@ Python, pandas, scikit-learn, NLTK, Streamlit
 1. Explore the data (done)
 2. Clean the text (done)
 3. Convert text to numbers with TF-IDF (done)
-4. Train and compare models
-5. Build a Streamlit web app
-6. Deploy online
+4. Train the first model (done)
+5. Evaluate and compare more models
+6. Build a Streamlit web app
+7. Deploy online
 
 ## How to run
 Coming soon.
