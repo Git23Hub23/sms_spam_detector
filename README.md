@@ -3,7 +3,7 @@
 A machine learning project that classifies SMS messages as **spam** or **ham** (not spam).
 
 ## Status
-In progress (Day 3 of 10: text cleaning done)
+In progress (Day 4 of 10: TF-IDF features done)
 
 ## Dataset
 SMS Spam Collection Dataset (UCI / Kaggle), about 5,500 labeled messages.
@@ -23,6 +23,10 @@ Each message goes through these steps:
 4. Stemming (winning, winner, wins become "win")
 
 Labels are converted to numbers: ham = 0, spam = 1.
+After cleaning, 5,128 messages remain.
+
+## Feature extraction
+Text is converted to numbers using **TF-IDF** (top 3,000 words). The data is split 80% train / 20% test, and the vectorizer is fitted on training data only to avoid data leakage.
 
 ## Tech stack
 Python, pandas, scikit-learn, NLTK, Streamlit
@@ -30,7 +34,7 @@ Python, pandas, scikit-learn, NLTK, Streamlit
 ## Planned steps
 1. Explore the data (done)
 2. Clean the text (done)
-3. Convert text to numbers (TF-IDF)
+3. Convert text to numbers with TF-IDF (done)
 4. Train and compare models
 5. Build a Streamlit web app
 6. Deploy online
